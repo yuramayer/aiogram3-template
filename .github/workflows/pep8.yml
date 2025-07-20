@@ -37,3 +37,7 @@ jobs:
       # test flake8
       - name: Testing with flake8
         run: flake8 .
+        
+      # test pylint
+      - name: Testing py-files with pylint
+        run: find . -name "*.py" | xargs pylint
