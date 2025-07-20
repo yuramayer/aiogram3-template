@@ -8,4 +8,4 @@ async def on_startup():
     """When bot is started, check db & send message to the admins"""
 
     for admin_id in admins_ids:
-        await bot.send_message(admin_id, 'Бот включён 😎')
+        await bot.send_message(admin_id, 'The bot is ready! 😎')
